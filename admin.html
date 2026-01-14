@@ -121,7 +121,7 @@
         async function fetchMessages() {
             try {
                 // Changed from /api/messages to /api/contacts to match server.js
-                const response = await fetch('http://launchweb-backend-production.up.railway.app/api/contacts');
+                const response = await fetch('https://launchweb-backend-production.up.railway.app/api/contacts');
                 const messages = await response.json();
 
                 const tbody = document.getElementById('messagesTable');
@@ -183,4 +183,5 @@
 
 
 </html>
+
 
