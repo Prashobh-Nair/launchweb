@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - LaunchWeb</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Orbitron:wght@500;700&display=swap"
+        rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <style>
+        .contact-form-container {
+            width: 100%;
+            max-width: 600px;
+            background: var(--glass-bg);
+            padding: 40px;
+            border-radius: 15px;
+            border: 1px solid var(--glass-border);
+            margin-top: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: var(--primary-color);
+            font-size: 0.9rem;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 12px;
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid var(--glass-border);
+            color: #fff;
+            border-radius: 5px;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        .form-group input:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 10px rgba(0, 242, 234, 0.2);
+        }
+
+        #form-message {
+            margin-top: 15px;
+            font-size: 0.9rem;
+            min-height: 20px;
+        }
+
+        .success {
+            color: #00ff00;
+        }
+
+        .error {
+            color: #ff0050;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="logo">LaunchWeb</a>
+        <div class="hamburger">
+            <ion-icon name="menu-outline"></ion-icon>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <h1>Initiate Contact</h1>
+        <p>Ready to launch your website? Fill out the form below.</p>
+
+        <div class="contact-form-container">
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="businessName">Business Name (Optional)</label>
+                    <input type="text" id="businessName" name="businessName">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone / WhatsApp</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <button type="submit" class="btn" style="width: 100%;">Send Request</button>
+            </form>
+            <div id="form-message"></div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 30px;">
+            <div class="footer-section" style="flex: 1; min-width: 250px;">
+                <h3>LaunchWeb</h3>
+                <p>“Modern, free websites for growing businesses.”</p>
+                <p style="color: var(--secondary-color); margin-top: 10px;">Serving businesses worldwide</p>
+                <div class="social-links" style="margin-top: 20px; font-size: 1.5rem; display: flex; gap: 15px;">
+                    <a href="https://www.instagram.com/prashobhnair/" target="_blank"
+                        style="color: white; transition: color 0.3s;"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="https://www.linkedin.com/in/prashobh-nair-477672343/" target="_blank"
+                        style="color: white; transition: color 0.3s;"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    <a href="https://github.com/Prashobh-Nair" target="_blank"
+                        style="color: white; transition: color 0.3s;"><ion-icon name="logo-github"></ion-icon></a>
+                </div>
+            </div>
+            <div class="footer-section" style="flex: 1; min-width: 150px;">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section" style="flex: 1; min-width: 250px;">
+                <h4>Connect</h4>
+                <p style="margin-bottom: 10px; display: flex; align-items: center; gap: 10px;">
+                    <ion-icon name="mail-outline" style="color: var(--primary-color);"></ion-icon>
+                    <a href="mailto:prashobhmanojnair@gmail.com"
+                        style="color: rgba(255,255,255,0.8); text-decoration: none;">prashobhmanojnair@gmail.com</a>
+                </p>
+                <p style="margin-bottom: 10px; display: flex; align-items: center; gap: 10px;">
+                    <ion-icon name="call-outline" style="color: var(--primary-color);"></ion-icon>
+                    <a href="tel:+919426062574" style="color: rgba(255,255,255,0.8); text-decoration: none;">+91 94260
+                        62574</a>
+                </p>
+                <p style="display: flex; align-items: center; gap: 10px;">
+                    <ion-icon name="location-outline" style="color: var(--primary-color);"></ion-icon>
+                    <span style="color: rgba(255,255,255,0.8);">India</span>
+                </p>
+            </div>
+            <div class="footer-section" style="flex: 1; min-width: 250px;">
+                <h4>Stay Updated</h4>
+                <p style="margin-bottom: 15px; font-size: 0.9rem; color: rgba(255,255,255,0.7);">Subscribe to our
+                    newsletter for the latest updates.</p>
+                <form action="#" style="display: flex; flex-direction: column; gap: 10px;">
+                    <input type="email" placeholder="Enter your email"
+                        style="padding: 10px; border-radius: 5px; border: 1px solid var(--glass-border); background: rgba(0,0,0,0.3); color: white; outline: none;">
+                    <button type="submit" class="btn"
+                        style="padding: 8px 15px; font-size: 0.9rem; width: fit-content;">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> LaunchWeb. All rights reserved.</p>
+            <p style="font-size: 0.8rem; opacity: 0.5; margin-top: 5px;">Built with <ion-icon
+                    name="logo-html5"></ion-icon>, <ion-icon name="logo-css3"></ion-icon> & <ion-icon
+                    name="logo-javascript"></ion-icon></p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
